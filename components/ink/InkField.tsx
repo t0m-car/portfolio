@@ -4,7 +4,7 @@ import { useEffect, useRef, type RefObject } from "react";
 import * as THREE from "three";
 import { seedToInk, INK_VERT, INK_FRAG } from "./ink";
 
-// WebGL driver for the ink field. Renders nothing itself — it drives the <canvas>
+// WebGL driver for the ink field. Renders nothing itself; it drives the <canvas>
 // owned by InkLab (passed via ref), so the markup can render before three.js loads.
 // Setup runs once; name changes only swap uniforms (smooth while typing).
 export function InkField({

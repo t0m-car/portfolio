@@ -3,9 +3,9 @@ import { content } from "@/lib/content";
 
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
-export const alt = "Tom Cardoen — Software Engineer · tomca.be";
+export const alt = "Tom Cardoen · Software Engineer · tomca.be";
 
-// next/og (Satori) ignores global CSS — these mirror the globals.css :root hexes (sanctioned no-inline exception).
+// next/og (Satori) ignores global CSS, so these mirror the globals.css :root hexes (sanctioned no-inline exception).
 const BG = "#f7f6f3";
 const INK = "#16161a";
 const INK_3 = "#6e6e76";

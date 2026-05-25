@@ -49,7 +49,7 @@ export function StructuredData() {
   return (
     <script
       type="application/ld+json"
-      // Build-time, fully controlled data (no user input) — safe to inject as-is.
+      // Build-time, fully controlled data (no user input), safe to inject as-is.
       dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
     />
   );

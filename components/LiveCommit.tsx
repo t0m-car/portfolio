@@ -48,7 +48,7 @@ export function LiveCommit() {
     };
   }, []);
 
-  // After mount only — computing relative time in render would break hydration.
+  // After mount only: computing relative time in render would break hydration.
   useEffect(() => {
     if (!commit) return;
     const tick = () => setRel(relativeTime(commit.dateISO));

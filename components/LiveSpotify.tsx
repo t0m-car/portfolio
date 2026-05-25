@@ -87,7 +87,7 @@ export function LiveSpotify() {
             href={track.url}
             target="_blank"
             rel="noreferrer"
-            title={`${track.artist} — ${track.title}`}
+            title={`${track.artist} · ${track.title}`}
             onClick={(e) => e.stopPropagation()}
           >
             {name}

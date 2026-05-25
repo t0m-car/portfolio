@@ -82,7 +82,7 @@ export function SignatureDemo({
         powerPreference: "high-performance",
       });
     } catch (err) {
-      console.warn("[signature] WebGL unavailable — falling back to 2D", err);
+      console.warn("[signature] WebGL unavailable, falling back to 2D", err);
       onUnsupportedRef.current?.();
       return;
     }
