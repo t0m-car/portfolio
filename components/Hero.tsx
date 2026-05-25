@@ -29,15 +29,15 @@ export function Hero({ dict }: { dict: Content["hero"] }) {
           priority
           className="size-7 shrink-0 rounded-full border-[0.5px] border-rule-2 object-cover"
         />
-        <span>{dict.metaLine}</span>
+        <h1 className="text-sub font-normal tracking-normal text-ink-3">{dict.metaLine}</h1>
       </motion.div>
-      <motion.h1 variants={item}>
+      <motion.h2 className="hero-statement" variants={item}>
         {dict.h1Line1}
         <br />
         {dict.h1Line2Pre}
         <span className="accent-grad">{dict.h1Line2Accent}</span>
         {dict.h1Line2Post}
-      </motion.h1>
+      </motion.h2>
       <motion.p variants={item} className="mt-8 max-w-[56ch] text-lead text-ink-2">
         {dict.lede.map((seg, i) => {
           if (typeof seg === "string") return seg;

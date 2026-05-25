@@ -70,6 +70,11 @@
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+@utility hero-statement {
+  font-size: var(--text-h1);
+  line-height: 1.04;
+  letter-spacing: -0.035em;
+}
 
 :root {
   --bg: #f7f6f3;
