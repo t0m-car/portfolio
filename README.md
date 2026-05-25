@@ -46,3 +46,11 @@ cp .env.example .env.local
 - `components/` UI, including `lab/` and `ink/` for the WebGL work
 - `lib/` content and the server-side integration helpers
 - `public/` static assets
+
+## License
+
+Code is under the [MIT License](LICENSE): reuse it freely, just keep the
+copyright notice. A credit is appreciated.
+
+Content is not. The text, design and images (including `public/me.jpg`) are
+all rights reserved. Please do not pass the site off as your own.
