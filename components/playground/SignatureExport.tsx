@@ -34,7 +34,7 @@ async function downloadPng(seed: string) {
   if (blob) triggerDownload(blob, `signature-${fileSlug(seed)}.png`);
 }
 
-// No colour/background here — lives in .pg-export-btn so :hover isn't overridden.
+// No colour/background here; lives in .pg-export-btn so :hover isn't overridden.
 const fmtBtn = "cursor-pointer border-none font-mono text-meta uppercase tracking-[0.06em]";
 
 export function SignatureExport({ seed }: { seed: string }) {

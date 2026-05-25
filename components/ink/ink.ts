@@ -82,7 +82,7 @@ export const INK_VERT = /* glsl */ `
   }
 `;
 
-// Domain-warped fbm mapped between ink and sheen — ink diffusing in water.
+// Domain-warped fbm mapped between ink and sheen: ink diffusing in water.
 export const INK_FRAG = /* glsl */ `
   precision highp float;
   varying vec2 vUv;
