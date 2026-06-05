@@ -107,7 +107,9 @@ export const content: Content = {
       { link: "Azimut", href: "https://azimut.be" },
       " I build the apps for our smart home batteries. Outside work I ship my own things: ",
       { link: "seal", href: "https://ots.tomca.be" },
-      ", a secret-sharer. And through ",
+      ", a secret-sharer, and ",
+      { link: "Footics", href: "https://footics.app" },
+      ", a World Cup prediction game for friends. And through ",
       { link: "Nodeo", href: "https://nodeo.be" },
       ", I help others ship theirs.",
     ],
@@ -168,6 +170,14 @@ export const content: Content = {
     hint: "type · move · feel",
     labLink: { label: "More in the lab", href: "/lab" },
     projects: [
+      {
+        kind: "2026",
+        name: "Footics",
+        blurb:
+          "Pick the score before kickoff, play a joker, and find out who’s been the footix all along. No betting, just glory.",
+        tags: ["Next.js", "TypeScript", "PWA"],
+        links: [{ label: "Live", href: "https://footics.app" }],
+      },
       {
         kind: "2026",
         name: "seal",

@@ -53,14 +53,40 @@ export function StructuredData() {
       alumniOf: { "@type": "EducationalOrganization", name: "HELMo", url: "https://www.helmo.be" },
       sameAs: PROFILES,
       knowsAbout: KNOWS_ABOUT,
+      owns: { "@id": `${SITE}/#footics` },
     },
   };
 
+  // Footics is Tom's own product. A WebApplication node cross-linked to the Person
+  // (creator/author/owns) associates him with it for search engines.
+  const footicsLd = {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "@id": `${SITE}/#footics`,
+    name: "Footics",
+    url: "https://footics.app",
+    applicationCategory: "GameApplication",
+    operatingSystem: "Web",
+    browserRequirements: "Requires a modern web browser",
+    inLanguage: "fr-BE",
+    description:
+      "Free, ad-free World Cup 2026 score-prediction game for private groups of friends. No money betting, just bragging rights.",
+    creator: { "@id": `${SITE}/#person` },
+    author: { "@id": `${SITE}/#person` },
+    offers: { "@type": "Offer", price: "0", priceCurrency: "EUR" },
+  };
+
   return (
-    <script
-      type="application/ld+json"
-      // Build-time, fully controlled data (no user input), safe to inject as-is.
-      dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-    />
+    <>
+      <script
+        type="application/ld+json"
+        // Build-time, fully controlled data (no user input), safe to inject as-is.
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(footicsLd) }}
+      />
+    </>
   );
 }
