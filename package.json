@@ -11,18 +11,18 @@
   "dependencies": {
     "@vercel/analytics": "^2.0.1",
     "@vercel/speed-insights": "^2.0.0",
-    "motion": "^12.40.0",
+    "motion": "^12.42.2",
     "next": "^15.3.9",
-    "react": "^19.1.0",
-    "react-dom": "^19.1.0",
-    "three": "^0.184.0"
+    "react": "^19.2.7",
+    "react-dom": "^19.2.7",
+    "three": "^0.185.1"
   },
   "devDependencies": {
-    "@tailwindcss/postcss": "^4.3.0",
+    "@tailwindcss/postcss": "^4.3.2",
     "@types/node": "^22",
     "@types/react": "^19",
     "@types/react-dom": "^19",
-    "@types/three": "^0.184.0",
+    "@types/three": "^0.185.0",
     "postcss": "^8",
     "tailwindcss": "^4.3.0",
     "typescript": "^5"
