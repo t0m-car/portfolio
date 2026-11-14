@@ -3,7 +3,6 @@
 import { useEffect, useRef, useState } from "react";
 import { LiveCommit } from "./LiveCommit";
 import { LiveSpotify } from "./LiveSpotify";
-import { LiveFootics } from "./LiveFootics";
 
 function LiegeClock() {
   const [now, setNow] = useState<Date | null>(null);
@@ -75,21 +74,6 @@ const CommitIcon = () => (
   </svg>
 );
 
-const FooticsIcon = () => (
-  <svg
-    viewBox="0 0 24 24"
-    fill="none"
-    stroke="currentColor"
-    strokeWidth="1.6"
-    strokeLinecap="round"
-    strokeLinejoin="round"
-  >
-    <circle cx="12" cy="12" r="9" />
-    <path d="M12 7.5l3.6 2.6-1.4 4.2H9.8L8.4 10.1 12 7.5z" />
-    <path d="M12 7.5V4.2M15.6 10.1l3-1M14.2 14.3l1.9 2.5M9.8 14.3l-1.9 2.5M8.4 10.1l-3-1" />
-  </svg>
-);
-
 type State = {
   key: string;
   Icon: () => React.JSX.Element;
@@ -100,8 +84,6 @@ const LIVE_STATES: State[] = [
   { key: "clock", Icon: ClockIcon, Body: LiegeClock },
   { key: "spotify", Icon: SpotifyIcon, Body: LiveSpotify },
   { key: "github", Icon: CommitIcon, Body: LiveCommit },
-  // Time-boxed: countdown → "live now" → evergreen. Revisit after the 19 Jul 2026 final.
-  { key: "footics", Icon: FooticsIcon, Body: LiveFootics },
 ];
 
 export function LiveStatus() {
